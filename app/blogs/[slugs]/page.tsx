@@ -1,9 +1,11 @@
 import React from 'react'
 
-const page = () => {
+const SlugPage = async ({params} : {params : Promise<{slugs : string}>}) => {
+
+  const {slugs} = await params;
   return (
-    <div>Slugs page</div>
+    <div>Slugs page number : {slugs}</div>
   )
 }
 
-export default page
+export default SlugPage;
