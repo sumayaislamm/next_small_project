@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
 const LikeButton = () => {
   return (
-    <button onClick={() => console.log("Clicked")}>
-        Click
-    </button>
-  )
-}
+    <div>
+      <button onClick={() => console.log("Clicked")}>Click</button>
+      (Check the console to see the clicked result!)
+    </div>
+  );
+};
 
-export default LikeButton
+export default LikeButton;
