@@ -6,7 +6,7 @@ const blogs = await getBlogs();
   return (
     <div className="m-8">
       Blog page total: {blogs.length} 
-      {blogs.map((blog: any) => (
+      {blogs.map((blog) => (
         <div key={blog.id} className="mx-15 my-10">
           <h1>Blogs Number {blog.id}</h1>
           <h2 className="text-red-600">Here is the Title{blog.title}</h2>

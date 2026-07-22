@@ -1,6 +1,13 @@
 import { revalidateTag } from "next/cache";
 
-export const getBlogs = async () => {
+type Blog = {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+};
+
+export const getBlogs = async () : Promise<Blog[]> => {
   const posts = await fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "GET",
     cache: "force-cache",
