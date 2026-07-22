@@ -22,8 +22,8 @@ export const getBlogs = async () : Promise<Blog[]> => {
   return postData;
 };
 
-const renewBlogCache = () => {
-  revalidateTag("posts from tags", {
-    expire: 60 * 60 * 24 * 7,
-  });
-};
+// const renewBlogCache = () => {
+//   revalidateTag("posts from tags", {
+//     expire: 60 * 60 * 24 * 7,
+//   });
+// };
